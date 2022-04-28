@@ -2,7 +2,6 @@
 #include QMK_KEYBOARD_H
 
 
-
 /*
 
 // UART transport code modified from
@@ -141,8 +140,8 @@ void transport_slave(matrix_row_t matrix[]) {
     matrix_synced = false;
     send_packet(SLAVE_MATRIX_SYNC_ADDR, (char*)sync_matrix, sizeof(sync_matrix) * sizeof(matrix_row_t), &matrix_synced);
 }\
-
 */
+
 
 
 #ifdef RGB_MATRIX_ENABLE
