@@ -18,13 +18,16 @@
 /* disable action features */
 //#define NO_ACTION_LAYER
 //#define NO_ACTION_TAPPING
-//#define NO_ACTION_ONESHOT
+#define NO_ACTION_ONESHOT
+#define NO_MUSIC_MODE
+#define LAYER_STATE_8BIT
 
 
 
 #define SPLIT_HAND_PIN C2
 
-#define SOFT_SERIAL_PIN D3
+// change this between d2 and d3 for split firmwares
+#define SOFT_SERIAL_PIN D2
 
 //#define SPLIT_LAYER_STATE_ENABLE
 
@@ -37,6 +40,7 @@
 #define RGB_DI_PIN C5
 #define DRIVER_LED_TOTAL 58
 #define RGB_MATRIX_SPLIT { 29, 29 }
+#define RGBLED_SPLIT { 29, 29 }
 
 #define RGB_DISABLE_WHEN_USB_SUSPENDED
 
@@ -45,8 +49,9 @@
 #define ENABLE_RGB_MATRIX_BAND_SPIRAL_VAL
 #define ENABLE_RGB_MATRIX_CYCLE_ALL
 #define ENABLE_RGB_MATRIX_RAINDROPS
-
+/*
 #define ENABLE_RGB_MATRIX_PIXEL_FRACTAL
 #define ENABLE_RGB_MATRIX_PIXEL_FLOW
 #define ENABLE_RGB_MATRIX_PIXEL_RAIN
+*/
 #endif
