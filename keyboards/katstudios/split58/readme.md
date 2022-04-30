@@ -1,12 +1,14 @@
 # katstudios/split58
 
-![katstudios/split58](imgur.com image replace me!)
+![view of the board with lighting](https://imgur.com/1EusNmA)
 
-*A short description of the keyboard/project*
+a super low-profile split ortho ergo keyboard designed to have a minimal format and per key lighting
 
-* Keyboard Maintainer: [Kat](https://github.com/Kat)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+![view of the board from the top](https://imgur.com/LVEoUPA)
+
+* Keyboard Maintainer: [Kat](https://github.com/vampjaz)
+* Hardware Supported: kat studios "two of them" prototype pcb rev 03
+* Hardware Availability: not currently for sale, but gauging interest
 
 Make example for this keyboard (after setting up your build environment):
 
@@ -24,4 +26,4 @@ Enter the bootloader in 3 ways:
 
 * **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard
 * **Physical reset button**: Briefly press the button on the back of the PCB - some may have pads you must short instead
-* **Keycode in layout**: Press the key mapped to `RESET` if it is available
+* **Keycode in layout**: fn + r + esc on left side or fn + u + del on right side
