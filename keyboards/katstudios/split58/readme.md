@@ -1,14 +1,21 @@
 # katstudios/split58
 
-![view of the board with lighting](https://imgur.com/1EusNmA)
+![view of the board with lighting](https://imgur.com/1EusNmA.jpeg)
 
 a super low-profile split ortho ergo keyboard designed to have a minimal format and per key lighting
 
-![view of the board from the top](https://imgur.com/LVEoUPA)
+![view of the board from the top](https://imgur.com/LVEoUPA.jpeg)
 
 * Keyboard Maintainer: [Kat](https://github.com/vampjaz)
 * Hardware Supported: kat studios "two of them" prototype pcb rev 03
 * Hardware Availability: not currently for sale, but gauging interest
+
+### Considerations
+
+- this board is very short on RAM with the rgb enabled, adding other rgb animations or disabling optimization options may cause it to crash at runtime
+- in theory the lack of cc resistors on the split ports should protect it from causing any trouble if you accidentally plug those into a computer, though in practice it's still a good idea to never plug those into anything but the other half
+- rev 03 of the pcb has traces that got cut during the manufacturing process, the led data line needs to be bridged on the right side
+
 
 Make example for this keyboard (after setting up your build environment):
 
@@ -25,5 +32,5 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 Enter the bootloader in 3 ways:
 
 * **Bootmagic reset**: Hold down the key at (0,0) in the matrix (usually the top left key or Escape) and plug in the keyboard
-* **Physical reset button**: Briefly press the button on the back of the PCB - some may have pads you must short instead
-* **Keycode in layout**: fn + r + esc on left side or fn + u + del on right side
+* **Physical reset**: Briefly short the pads on the back of the PCB 
+* **Keycode in layout**: fn + R + esc on left side or fn + U + del on right side
